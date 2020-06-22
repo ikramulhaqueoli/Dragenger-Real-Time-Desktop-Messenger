@@ -1,0 +1,16 @@
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\obj\Debug\LocalRepository.csprojResolveAssemblyReference.cache
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\LocalRepository.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\LocalRepository.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\EntityLibrary.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\Interfaces.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\FileIOAccess.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\ResourceLibrary.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\EntityLibrary.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\Interfaces.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\FileIOAccess.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\ResourceLibrary.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\obj\Debug\LocalRepository.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\obj\Debug\LocalRepository.pdb

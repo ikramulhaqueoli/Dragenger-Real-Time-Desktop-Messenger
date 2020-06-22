@@ -1,0 +1,13 @@
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\bin\Debug\EntityLibrary.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\bin\Debug\FileIOAccess.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\bin\Debug\ResourceLibrary.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\bin\Debug\EntityLibrary.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\bin\Debug\FileIOAccess.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\bin\Debug\ResourceLibrary.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Interfaces\obj\Debug\Interfaces.pdb

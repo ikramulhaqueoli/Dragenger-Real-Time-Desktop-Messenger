@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D5A635F-C596-42F6-A6C5-4CC88FCC0640}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FileIOAccess</RootNamespace>
+    <AssemblyName>FileIOAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileResources.cs" />
+    <Compile Include="LocalDataFileAccess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ResourceLibrary\ResourceLibrary.csproj">
+      <Project>{33268fb7-4d53-45a8-8102-f20cdeb842c0}</Project>
+      <Name>ResourceLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Res\audios\when.wav" />
+    <EmbeddedResource Include="Res\icons\addFriend.png" />
+    <EmbeddedResource Include="Res\icons\add_friend.png" />
+    <EmbeddedResource Include="Res\icons\add_friend_accept.png" />
+    <EmbeddedResource Include="Res\icons\add_friend_accept_rev.png" />
+    <EmbeddedResource Include="Res\icons\add_friend_blue.png" />
+    <EmbeddedResource Include="Res\icons\add_friend_cancel.png" />
+    <EmbeddedResource Include="Res\icons\add_friend_cancel_rev.png" />
+    <EmbeddedResource Include="Res\icons\add_friend_green.png" />
+    <EmbeddedResource Include="Res\icons\add_friend_red.png" />
+    <EmbeddedResource Include="Res\icons\add_friend_yellow.png" />
+    <EmbeddedResource Include="Res\icons\attachment.png" />
+    <EmbeddedResource Include="Res\icons\back.png" />
+    <EmbeddedResource Include="Res\icons\blockedPersons.png" />
+    <EmbeddedResource Include="Res\icons\cancel.png" />
+    <EmbeddedResource Include="Res\icons\cancelfile.png" />
+    <EmbeddedResource Include="Res\icons\cancelfile_rev.png" />
+    <EmbeddedResource Include="Res\icons\cancel_rev.png" />
+    <EmbeddedResource Include="Res\icons\choosefiles.png" />
+    <EmbeddedResource Include="Res\icons\deliveredIcon.png" />
+    <EmbeddedResource Include="Res\icons\dragdrop.png" />
+    <EmbeddedResource Include="Res\icons\empty.png" />
+    <EmbeddedResource Include="Res\icons\friendRequests.png" />
+    <EmbeddedResource Include="Res\icons\greenDot.png" />
+    <EmbeddedResource Include="Res\icons\loading.png" />
+    <EmbeddedResource Include="Res\icons\logo.png" />
+    <EmbeddedResource Include="Res\icons\logo_with_name.png" />
+    <EmbeddedResource Include="Res\icons\ok.png" />
+    <EmbeddedResource Include="Res\icons\option_0.png" />
+    <EmbeddedResource Include="Res\icons\option_0_rev.png" />
+    <EmbeddedResource Include="Res\icons\option_1.png" />
+    <EmbeddedResource Include="Res\icons\option_1_rev.png" />
+    <EmbeddedResource Include="Res\icons\option_2.png" />
+    <EmbeddedResource Include="Res\icons\option_2_rev.png" />
+    <EmbeddedResource Include="Res\icons\redwarning.png" />
+    <EmbeddedResource Include="Res\icons\searchIcon.png" />
+    <EmbeddedResource Include="Res\icons\seenIcon.png" />
+    <EmbeddedResource Include="Res\icons\sendButton.png" />
+    <EmbeddedResource Include="Res\icons\sendfile.png" />
+    <EmbeddedResource Include="Res\icons\sendfile_rev.png" />
+    <EmbeddedResource Include="Res\icons\sentIcon.png" />
+    <EmbeddedResource Include="Res\icons\smile.png" />
+    <EmbeddedResource Include="Res\icons\snapshot.png" />
+    <EmbeddedResource Include="Res\icons\threeLines.png" />
+    <EmbeddedResource Include="Res\icons\threeLinesrev.png" />
+    <EmbeddedResource Include="Res\icons\upset.png" />
+    <EmbeddedResource Include="Res\icons\userViewIcon0.png" />
+    <EmbeddedResource Include="Res\icons\userViewIcon0rev.png" />
+    <EmbeddedResource Include="Res\icons\userViewIcon1.png" />
+    <EmbeddedResource Include="Res\icons\userViewIcon1rev.png" />
+    <EmbeddedResource Include="Res\icons\userViewIcon2.png" />
+    <EmbeddedResource Include="Res\icons\userViewIcon2rev.png" />
+    <EmbeddedResource Include="Res\icons\userViewIcon3.png" />
+    <EmbeddedResource Include="Res\icons\userViewIcon3rev.png" />
+    <EmbeddedResource Include="Res\icons\userViewIcon4.png" />
+    <EmbeddedResource Include="Res\icons\userViewIcon4rev.png" />
+    <EmbeddedResource Include="Res\images\nullProfileImage.png" />
+    <EmbeddedResource Include="Res\images\pictureChangeHint.png" />
+    <EmbeddedResource Include="Res\null.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Res\fonts\Belleza-Regular.ttf" />
+    <EmbeddedResource Include="Res\fonts\NotoColorEmoji.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Res\images\group_conversation_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Res\LocalData.sdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Res\icons\copyIcon.png" />
+    <EmbeddedResource Include="Res\icons\deleteIcon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,7 @@
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\bin\Debug\MathLaboratory.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\bin\Debug\MathLaboratory.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\bin\Debug\ResourceLibrary.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\bin\Debug\ResourceLibrary.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.csprojResolveAssemblyReference.cache
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.pdb

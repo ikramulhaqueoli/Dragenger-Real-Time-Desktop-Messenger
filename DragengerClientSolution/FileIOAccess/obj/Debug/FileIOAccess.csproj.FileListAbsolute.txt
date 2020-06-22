@@ -1,0 +1,7 @@
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.csprojResolveAssemblyReference.cache
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\bin\Debug\FileIOAccess.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\bin\Debug\FileIOAccess.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\bin\Debug\ResourceLibrary.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\bin\Debug\ResourceLibrary.pdb
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.dll
+C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.pdb
