@@ -31,6 +31,31 @@ namespace CorePanels.SlideBar
             this.Controls.Add(foundUserListPanel);
         }
 
+        protected void ShowBackButtonLabel()
+        {
+            this.backButtonLabel = new Label();
+            this.backButtonLabel.Name = "Back";
+            this.backButtonLabel.Size = new Size(this.Width / 6, this.Height / 8);
+            this.backButtonLabel.Location = new Point(3, 8);
+            this.backButtonLabel.Image = new Bitmap(FileResources.Icon("back.png"), new Size(backButtonLabel.Height - 20, backButtonLabel.Height - 20));
+            this.backButtonLabel.ImageAlign = ContentAlignment.MiddleCenter;
+            this.backButtonLabel.MouseEnter += delegate (Object sender, EventArgs e) { ((Label)sender).BackColor = Color.FromArgb(((Label)sender).BackColor.R - 25, ((Label)sender).BackColor.G - 25, ((Label)sender).BackColor.B - 25); };
+            this.backButtonLabel.MouseLeave += delegate (Object sender, EventArgs e) { ((Label)sender).BackColor = Color.FromArgb(((Label)sender).BackColor.R + 25, ((Label)sender).BackColor.G + 25, ((Label)sender).BackColor.B + 25); };
+            this.backButtonLabel.Click += delegate (Object sender, EventArgs e) { this.parent.Controls.Remove(this); ((FriendListPanel)parent).RefreshFriendlist(); this.parent.Controls.Add(((FriendListPanel)parent).FriendListMainPanel); };
+            this.Controls.Add(this.backButtonLabel);
+        }
+
+        protected void ShowHeadlineLabel(string heading)
+        {
+            Label headline = new Label();
+            headline.Text = heading;
+            headline.Font = CustomFonts.BigBold;
+            headline.ForeColor = Color.FromArgb(95, 95, 95);
+            headline.Size = headline.PreferredSize;
+            headline.Location = new Point(this.backButtonLabel.Right + 5, 3 + (this.backButtonLabel.Bottom - headline.Height) / 2);
+            this.Controls.Add(headline);
+        }
+
         protected void ShowMatchedList(List<JObject> matchList)
         {
             previousUserBottom = 0;

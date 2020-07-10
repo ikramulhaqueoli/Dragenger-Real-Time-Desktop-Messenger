@@ -50,6 +50,8 @@ namespace ServerConnections
                     }
                 }
             };
+            bworker.RunWorkerAsync();
+            bworker.RunWorkerCompleted += (s,e) => { bworker.Dispose(); }; 
         }
 
         private void ConnectToServer()

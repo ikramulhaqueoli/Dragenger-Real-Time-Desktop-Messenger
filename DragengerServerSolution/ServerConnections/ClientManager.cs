@@ -88,17 +88,17 @@ namespace ServerConnections
             {
                 try
                 {
-                    List<long> nuntiasOwnerIdList = NuntiasRepository.Instance.NuntiasOwnerIdList(newNuntias.Id);
-                    foreach (long userId in nuntiasOwnerIdList)
-                    {
-                        Output.ShowLog(userId);
-                        List<string> connectionIdList = LoggedInConnectionIdList(userId);
-                        foreach (string connectionId in connectionIdList)
-                        {
-                            Output.ShowLog("cm: " + userId + " " + connectionId + " " + connectionIdList.Count);
-                            ServerHub.WorkingHubInstance.Clients.Client(connectionId).SendNuntias(newNuntias.ToJson());
-                        }
-                    }
+            //        List<long> nuntiasOwnerIdList = NuntiasRepository.Instance.NuntiasOwnerIdList(newNuntias.Id);
+            //        foreach (long userId in nuntiasOwnerIdList)
+            //        {
+            //            Output.ShowLog(userId);
+            //            List<string> connectionIdList = LoggedInConnectionIdList(userId);
+            //            foreach (string connectionId in connectionIdList)
+            //            {
+            //                Output.ShowLog("cm: " + userId + " " + connectionId + " " + connectionIdList.Count);
+                            ServerHub.WorkingHubInstance.Clients.All.SendNuntias(newNuntias.ToJson());
+            //            }
+            //        }
                 }
                 catch(Exception ex)
                 {
@@ -111,22 +111,22 @@ namespace ServerConnections
 
         internal void CastTypingTextToConsumers(long conversationId, string text, string macAddress)
         {
-            List<long> conversationMemberIdList = ConsumerRepository.Instance.ConversationMemberIdList(conversationId);
-            foreach (long userId in conversationMemberIdList)
-            {
-                List<string> connectionIdList = LoggedInConnectionIdList(userId);
-                foreach (string connectionId in connectionIdList)
-                {
-                    if (MacConnectionIdMap[macAddress] == connectionId) continue;
-                    BackgroundWorker bworker = new BackgroundWorker();
-                    bworker.DoWork += (s, e) =>
-                    {
-                        ServerHub.WorkingHubInstance.Clients.Client(connectionId).SomethingBeingTypedForYou(conversationId, text);
-                    };
-                    bworker.RunWorkerAsync();
-                    bworker.RunWorkerCompleted += (s, e) => { bworker.Dispose(); };
-                }
-            }
+            //List<long> conversationMemberIdList = ConsumerRepository.Instance.ConversationMemberIdList(conversationId);
+            //foreach (long userId in conversationMemberIdList)
+            //{
+            //    List<string> connectionIdList = LoggedInConnectionIdList(userId);
+            //    foreach (string connectionId in connectionIdList)
+            //    {
+            //        if (MacConnectionIdMap[macAddress] == connectionId) continue;
+            //        BackgroundWorker bworker = new BackgroundWorker();
+            //        bworker.DoWork += (s, e) =>
+            //        {
+                        ServerHub.WorkingHubInstance.Clients.All.SomethingBeingTypedForYou(conversationId, text);
+            //        };
+            //        bworker.RunWorkerAsync();
+            //        bworker.RunWorkerCompleted += (s, e) => { bworker.Dispose(); };
+            //    }
+            //}
         }
 
         public static ClientManager Instance { get { return new ClientManager(); } }

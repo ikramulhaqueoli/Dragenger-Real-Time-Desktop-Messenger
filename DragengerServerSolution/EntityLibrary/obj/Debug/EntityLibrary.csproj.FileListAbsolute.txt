@@ -1,0 +1,7 @@
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\EntityLibrary.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\EntityLibrary.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.csprojResolveAssemblyReference.cache
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.pdb

@@ -57,6 +57,7 @@ namespace ProcessManagement
                         else ServerFileRequest.DownloadAndStoreContentFile(newNuntias);
                     }
                     bool? updateResult = NuntiasRepository.Instance.Update(newNuntias);
+                    Console.WriteLine("update: " + updateResult);
                     if (updateResult == false)
                     {
                         long? result = NuntiasRepository.Instance.Insert(newNuntias);

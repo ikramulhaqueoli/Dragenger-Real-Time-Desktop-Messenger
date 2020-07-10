@@ -266,6 +266,7 @@ namespace ServerConnections
                     fetchedFriendListJson = task.Result;
                 }
             }).Wait();
+            if (fetchedFriendListJson == null) return new List<JObject>();
             foreach (JObject consumerJson in fetchedFriendListJson)
             {
                 try { ServerFileRequest.RefetchProfileImage(consumerJson["profile_img_id"].ToString()); } catch { }

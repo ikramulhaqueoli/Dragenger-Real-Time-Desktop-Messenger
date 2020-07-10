@@ -230,7 +230,15 @@ namespace CorePanels
                         usernameLabel.MouseEnter += (s, e) => { currentFriendPanel.BackColor = Color.FromArgb(currentFriendPanel.BackColor.R - 25, currentFriendPanel.BackColor.G - 25, currentFriendPanel.BackColor.B - 25); };
                         usernameLabel.MouseLeave += (s, e) => { currentFriendPanel.BackColor = Color.FromArgb(currentFriendPanel.BackColor.R + 25, currentFriendPanel.BackColor.G + 25, currentFriendPanel.BackColor.B + 25); };
 
-                        currentFriendPanel.Click += (s, e) => { this.OpenConversationWith(friend); };
+                        currentFriendPanel.Click += (s, e) => 
+                        {
+                            if (ConversationPanel.CurrentDisplayedConversationPanel.TheConversation != null && ((DuetConversation)(ConversationPanel.CurrentDisplayedConversationPanel.TheConversation)).OtherMember.Id == friend.Id)
+                            {
+                                SlidebarPanel.MySidebarPanel.ChangeState();
+                                return;
+                            }
+                            this.OpenConversationWith(friend);
+                        };
                         currentFriendPanel.MouseEnter += (s, e) => { ((Panel)s).BackColor = Color.FromArgb(((Panel)s).BackColor.R - 25, ((Panel)s).BackColor.G - 25, ((Panel)s).BackColor.B - 25); };
                         currentFriendPanel.MouseLeave += (s, e) => { ((Panel)s).BackColor = Color.FromArgb(((Panel)s).BackColor.R + 25, ((Panel)s).BackColor.G + 25, ((Panel)s).BackColor.B + 25); };
                     }

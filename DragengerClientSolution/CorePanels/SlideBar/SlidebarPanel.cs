@@ -142,6 +142,8 @@ namespace CorePanels
             tempPanel.Top = this.optionBarPanel.Bottom + 2;
             tempPanel.Left = this.optionBarPanel.Left;
             tempPanel.Size = this.ListPanelsSize;
+            if(listIndex == 0) ((ConversationListPanel)tempPanel).RefreshConversationList();
+            else if(listIndex == 1) ((FriendListPanel)tempPanel).RefreshFriendlist();
             this.mainPanelInSidebar.Controls.Add(tempPanel);
             this.ReverseOptionLabelColor(optionLabels[listIndex], "gray");
         }

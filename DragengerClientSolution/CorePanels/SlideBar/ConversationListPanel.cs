@@ -165,7 +165,15 @@ namespace CorePanels
                     lastNuntiasLabel.MouseEnter += (s, e) => { currentConversationTitlePanel.BackColor = Color.FromArgb(currentConversationTitlePanel.BackColor.R - 25, currentConversationTitlePanel.BackColor.G - 25, currentConversationTitlePanel.BackColor.B - 25); };
                     lastNuntiasLabel.MouseLeave += (s, e) => { currentConversationTitlePanel.BackColor = Color.FromArgb(currentConversationTitlePanel.BackColor.R + 25, currentConversationTitlePanel.BackColor.G + 25, currentConversationTitlePanel.BackColor.B + 25); };
 
-                    currentConversationTitlePanel.Click += (s, e) => { this.OpenConversation(ConversationRepository.Instance.Get(conversationId)); };
+                    currentConversationTitlePanel.Click += (s, e) => 
+                    {
+                        if (ConversationPanel.CurrentDisplayedConversationPanel.TheConversation != null && ((DuetConversation)(ConversationPanel.CurrentDisplayedConversationPanel.TheConversation)).ConversationID == conversationId)
+                        {
+                            SlidebarPanel.MySidebarPanel.ChangeState();
+                            return;
+                        }
+                        this.OpenConversation(ConversationRepository.Instance.Get(conversationId));
+                    };
                     currentConversationTitlePanel.MouseEnter += (s, e) => { ((Panel)s).BackColor = Color.FromArgb(((Panel)s).BackColor.R - 25, ((Panel)s).BackColor.G - 25, ((Panel)s).BackColor.B - 25); };
                     currentConversationTitlePanel.MouseLeave += (s, e) => { ((Panel)s).BackColor = Color.FromArgb(((Panel)s).BackColor.R + 25, ((Panel)s).BackColor.G + 25, ((Panel)s).BackColor.B + 25); };
                 }
