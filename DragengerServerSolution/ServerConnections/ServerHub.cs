@@ -46,6 +46,7 @@ namespace ServerConnections
                 long? userId = UserRepository.Instance.GetUserIdByMacAddress(macAddress);
                 if (userId != null) ClientManager.Instance.DeregisterConnectionWithConsumerDevice((long)userId, macAddress, Context.ConnectionId);
                 UserRepository.Instance.SetUserLastActiveTimeStamp((long)userId);
+                ClientManager.Instance.UpdateUsersActivityToFriends((long)userId, Time.CurrentTime.TimeStampString);
                 return base.OnDisconnected(stopCalled);
             }
             catch(Exception ex)
@@ -168,9 +169,10 @@ namespace ServerConnections
 
         public JObject GetConsumer(long userId)
 		{
+            Output.ShowLog("GetConsumer() => " + userId);
 			Consumer fetchedConsumer = ConsumerRepository.Instance.Get(userId);
-			if(fetchedConsumer == null) return null;
-			return fetchedConsumer.ToJson();
+            if (fetchedConsumer == null) return null;
+            return fetchedConsumer.ToJson();
 		}
 
         public bool BindDeviceWithExistingAccount(List<double> encryptedData)
@@ -274,11 +276,13 @@ namespace ServerConnections
             long userId = (long)deleteRequestJson["owner_id"];
             long nuntiasId = (long)deleteRequestJson["nuntias_id"];
             bool forBoth = (bool)deleteRequestJson["for_both"];
+            string requestingMacAddress = Context.Headers["mac_address"].ToString();
+
             bool success = NuntiasRepository.Instance.DeleteNuntias(userId, nuntiasId, forBoth);
             Output.ShowLog(success + " " + forBoth);
             if (success && forBoth)
             {
-                ClientManager.Instance.SendNuntiasToConsumers(NuntiasRepository.Instance.Get(nuntiasId));
+                ClientManager.Instance.SendNuntiasToConsumers(NuntiasRepository.Instance.Get(nuntiasId), requestingMacAddress);
             }
             return success;
         }
@@ -286,7 +290,7 @@ namespace ServerConnections
         public List<JObject> SearchTop20PersonsByKeyword(long userId, string keyword)
         {
             Output.ShowLog("SearchTop20PersonsByKeyword() => " + userId + " " + keyword);
-            List<Consumer> metchedList = ConsumerRepository.Instance.SearchTop20NonfriendPersonsByKeyword(userId, keyword);
+            List<Consumer> metchedList = ConsumerRepository.Instance.SearchNonfriendPersonsByKeyword(userId, keyword);
             List<JObject> personsJsonDataList = new List<JObject>();
             foreach (Consumer consumer in metchedList)
             {
@@ -308,7 +312,7 @@ namespace ServerConnections
         public List<JObject> GetTop20FriendListOf(long userId, string keyword)
         {
             Output.ShowLog("GetTop20FriendListOf() => " + userId);
-            List<Consumer> metchedList = ConsumerRepository.Instance.GetTop20FriendListOf(userId, keyword);
+            List<Consumer> metchedList = ConsumerRepository.Instance.GetFriendListOf(userId, keyword);
             List<JObject> personsJsonDataList = new List<JObject>();
             foreach (Consumer consumer in metchedList)
             {
@@ -391,7 +395,7 @@ namespace ServerConnections
             if (newNuntias.Id > 0)
             {
                 Output.ShowLog("Called " + newNuntias.Id);
-                ClientManager.Instance.SendNuntiasToConsumers(newNuntias);
+                ClientManager.Instance.SendNuntiasToConsumers(newNuntias, Context.Headers["mac_address"]);
             }
             return newNuntias.Id;
         }
@@ -407,7 +411,7 @@ namespace ServerConnections
             Output.ShowLog("UpdateNuntiasStatusToOwners() => " + nuntiasJsonData);
             Nuntias newNuntias = new Nuntias(nuntiasJsonData);
             bool? success = NuntiasRepository.Instance.UpdateNuntiasStatusTimes(newNuntias, (long)nuntiasJsonData["user_id"]);
-            ClientManager.Instance.SendNuntiasToConsumers(newNuntias);
+            ClientManager.Instance.SendNuntiasToConsumers(newNuntias, Context.Headers["mac_address"]);
             if (success == true) return true;
             return false;
         }
@@ -422,7 +426,7 @@ namespace ServerConnections
             {
                 Output.ShowLog("Called " + newNuntias.Id);
                 ContentFileAccess.StoreNuntiasContentFile(nuntiasData.Value, newNuntias.Id);
-                ClientManager.Instance.SendNuntiasToConsumers(newNuntias);
+                ClientManager.Instance.SendNuntiasToConsumers(newNuntias, Context.Headers["mac_address"]);
             }
             return newNuntias.Id;
         }
@@ -457,9 +461,19 @@ namespace ServerConnections
             return ConsumerRepository.Instance.DeleteConsumerAccount(macAddress, password);
         }
 
-        public void SomethingTypingOnConversationFor(long conversationId, string text)
+        public bool SomethingTypingOnConversationFor(long conversationId, long typingUserId, string text)
         {
-            ClientManager.Instance.CastTypingTextToConsumers(conversationId, text, Context.Headers["mac_address"]);
+            Output.ShowLog("SomethingTypingOnConversationFor() => " + conversationId + " " + typingUserId + " " + text);
+            try
+            {
+                ClientManager.Instance.CastTypingTextToConsumers(conversationId, text, typingUserId);
+                return true;
+            }
+            catch(Exception ex)
+            {
+                Output.ShowLog("Error in SomethingTypingOnConversationFor() => " + ex.Message + " " + ex.InnerException.Message);
+                return false;
+            }
         }
 
         //testing APIs

@@ -103,17 +103,17 @@ namespace Repositories
             return consumerList;
         }
 
-        public List<Consumer> SearchTop20FriendRequestsByKeyword(long userId, string keyword)
+        public List<Consumer> SearchFriendRequestsByKeyword(long userId, string keyword)
         {
             keyword = keyword.ToLower();
-            string query = "SELECT TOP(20) U.Id, U.Username, U.Last_Active, C.Name, C.Profile_img_ID FROM Users U, Consumers C (LOWER(U.username)='" + keyword + "' or LOWER(C.Name) like '%" + keyword + "%' or LOWER(C.Email) = '" + keyword + "') and U.Id = C.User_Id and U.Id IN ( SELECT sender_Id FROM FriendRequests_map WHERE receiver_Id = " + userId + " or sender_Id = " + userId + ")";
+            string query = "SELECT U.Id, U.Username, U.Last_Active, C.Name, C.Profile_img_ID FROM Users U, Consumers C (LOWER(U.username)='" + keyword + "' or LOWER(C.Name) like '%" + keyword + "%' or LOWER(C.Email) = '" + keyword + "') and U.Id = C.User_Id and U.Id IN ( SELECT sender_Id FROM FriendRequests_map WHERE receiver_Id = " + userId + " or sender_Id = " + userId + ")";
             return ConsumerListFromQuery(query);
         }
 
-        public List<Consumer> SearchTop20NonfriendPersonsByKeyword(long userId, string keyword)
+        public List<Consumer> SearchNonfriendPersonsByKeyword(long userId, string keyword)
         {
             keyword = keyword.ToLower();
-            string query = "SELECT TOP (20) U.Id, U.Username, U.Last_Active, C.Name, C.Profile_img_ID FROM Users U, Consumers C where (LOWER(U.username)='" + keyword + "' or LOWER(C.Name) like '%" + keyword + "%' or LOWER(C.Email) = '" + keyword + "') and U.Id = C.User_Id and U.Id NOT IN ( SELECT User_Id_2 FROM Friendship_Map WHERE User_Id_1 = " + userId + " union all SELECT User_Id_1 FROM Friendship_Map WHERE User_Id_2 = " + userId + " ) and U.Id <> " + userId;
+            string query = "SELECT U.Id, U.Username, U.Last_Active, C.Name, C.Profile_img_ID FROM Users U, Consumers C where (LOWER(U.username)='" + keyword + "' or LOWER(C.Name) like '%" + keyword + "%' or LOWER(C.Email) = '" + keyword + "') and U.Id = C.User_Id and U.Id NOT IN ( SELECT User_Id_2 FROM Friendship_Map WHERE User_Id_1 = " + userId + " union all SELECT User_Id_1 FROM Friendship_Map WHERE User_Id_2 = " + userId + " ) and U.Id <> " + userId;
             List<Consumer> fetchedList = ConsumerListFromQuery(query);
             return fetchedList;
         }
@@ -126,10 +126,10 @@ namespace Repositories
             return fetchedList;
         }
 
-        public List<Consumer> GetTop20FriendListOf(long userId, string keyword)
+        public List<Consumer> GetFriendListOf(long userId, string keyword)
         {
             keyword = keyword.ToLower();
-            string query = "SELECT TOP (20) U.Id, U.Username, U.Last_Active, C.Name, C.Profile_img_ID, C.Email FROM Users U, Consumers C where (LOWER(U.username)='" + keyword + "' or LOWER(C.Name) like '%" + keyword + "%' or LOWER(C.Email) = '" + keyword + "') and U.Id = C.User_Id and U.Id IN ( SELECT User_Id_2 FROM Friendship_Map WHERE User_Id_1 = " + userId + " union all SELECT User_Id_1 FROM Friendship_Map WHERE User_Id_2 = " + userId + " ) and U.Id <> " + userId;
+            string query = "SELECT U.Id, U.Username, U.Last_Active, C.Name, C.Profile_img_ID, C.Email FROM Users U, Consumers C where (LOWER(U.username)='" + keyword + "' or LOWER(C.Name) like '%" + keyword + "%' or LOWER(C.Email) = '" + keyword + "') and U.Id = C.User_Id and U.Id IN ( SELECT User_Id_2 FROM Friendship_Map WHERE User_Id_1 = " + userId + " union all SELECT User_Id_1 FROM Friendship_Map WHERE User_Id_2 = " + userId + " ) and U.Id <> " + userId;
             List<Consumer> fetchedList = ConsumerListFromQuery(query);
             return fetchedList;
         }
@@ -222,7 +222,8 @@ namespace Repositories
             senderListQuery += ')';
             receiverListQuery += ')';
             SqlDataReader data = ReadSqlData(senderListQuery);
-            while(data.Read())
+            if(data != null)
+                while(data.Read())
             {
                 long foundId = (long)data["sender_id"];
                 consumerDictionary[foundId]["frequest_status"] = "r_sender";
@@ -230,7 +231,8 @@ namespace Repositories
             this.CloseConnection();
 
             data = ReadSqlData(receiverListQuery);
-            while (data.Read())
+            if (data != null)
+                while (data.Read())
             {
                 long foundId = (long)data["receiver_id"];
                 consumerDictionary[foundId]["frequest_status"] = "r_receiver";

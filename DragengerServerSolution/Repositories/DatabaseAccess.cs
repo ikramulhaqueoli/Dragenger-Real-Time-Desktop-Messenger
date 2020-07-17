@@ -18,7 +18,7 @@ namespace Repositories
             connection = new SqlConnection(ConfigurationManager.ConnectionStrings["globalDB"].ConnectionString);
         }
 
-        internal SqlDataReader ReadSqlData(string query)
+        public SqlDataReader ReadSqlData(string query)
         {
             try
             {
@@ -36,7 +36,7 @@ namespace Repositories
             }
         }
 
-        internal int? ExecuteSqlQuery(string query)
+        public int? ExecuteSqlQuery(string query)
         {
             try
             {
@@ -53,7 +53,23 @@ namespace Repositories
             }
         }
 
-        internal string ExecuteSqlScalar(string query)
+        public string ExecuteSqlQueryAndGiveResultString(string query)
+        {
+            try
+            {
+                try { this.connection.Open(); }
+                catch { }
+                SqlCommand command = new SqlCommand(query);
+                command.Connection = this.connection;
+                return "Affected rows: " + command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                return "Error: " + e.Message;
+            }
+        }
+
+        public string ExecuteSqlScalar(string query)
         {
             try
             {
@@ -67,6 +83,22 @@ namespace Repositories
             {
                 Output.ShowLog(e.Message + "\n" + query);
                 return null;
+            }
+        }
+
+        public string ExecuteSqlScalarAndGiveResultString(string query)
+        {
+            try
+            {
+                try { this.connection.Open(); }
+                catch { }
+                SqlCommand command = new SqlCommand(query, this.connection);
+                string result = command.ExecuteScalar() + "";
+                return result;
+            }
+            catch (Exception e)
+            {
+                return "Error: " + e.Message;
             }
         }
 

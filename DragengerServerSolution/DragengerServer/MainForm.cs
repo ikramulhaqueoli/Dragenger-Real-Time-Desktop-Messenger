@@ -2,9 +2,11 @@
 using Repositories;
 using ServerConnections;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -122,5 +124,35 @@ namespace Main
 			TestPanelContainer.WorkingInstance.LastBottom = 0;
 			TestPanelContainer.WorkingInstance.VerticalScroll.Value = TestPanelContainer.WorkingInstance.VerticalScroll.Maximum;
 		}
+
+        private void executeButton1_Click(object sender, EventArgs e)
+        {
+            string query = this.selectQueryTextbox.Text;
+            if (query.Length == 0) return;
+            SqlDataReader data = DatabaseAccess.Instance.ReadSqlData(query);
+            if (data == null)
+            {
+                this.resultBox.Text = "Invalid Select Statement!";
+                return;
+            }
+            DataTable dataTable = new DataTable();
+            if (data.Read())
+            {
+                dataTable.Load(data);
+            }
+            this.resultGridView.DataSource = dataTable;
+            this.resultGridView.Update();
+        }
+
+        private void executeButton2_Click(object sender, EventArgs e)
+        {
+            string query = this.nonSqlQueryBox.Text;
+            if (query.Length == 0) return;
+            string result = null;
+            if (queryOptionButton1.Checked) result = DatabaseAccess.Instance.ExecuteSqlQueryAndGiveResultString(query);
+            else if (queryOptionButton2.Checked) result = DatabaseAccess.Instance.ExecuteSqlScalarAndGiveResultString(query);
+            else result = "No query option selected!";
+            this.resultBox.Text = result;
+        }
     }
 }

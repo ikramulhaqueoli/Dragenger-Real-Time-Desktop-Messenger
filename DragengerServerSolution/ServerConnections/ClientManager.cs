@@ -60,9 +60,11 @@ namespace ServerConnections
             {
                 IsMacLoggedIn[macAddress] = true;
                 UserRepository.Instance.SetUserActive(user.Id);
+                this.UpdateUsersActivityToFriends(user.Id, "active");
             }
             return user;
         }
+
         internal List<string> LoggedInConnectionIdList(long userId)
         {
             List<string> connectionIdList = new List<string>();
@@ -80,7 +82,7 @@ namespace ServerConnections
         }
 
         //conversation and nuntias requests methods
-        internal void SendNuntiasToConsumers(Nuntias newNuntias)
+        internal void SendNuntiasToConsumers(Nuntias newNuntias, string requestingMacAddress)
         {
             Output.ShowLog("SendNuntiasToConsumers() => " + newNuntias.ToJson());
             BackgroundWorker bworker = new BackgroundWorker();
@@ -88,17 +90,18 @@ namespace ServerConnections
             {
                 try
                 {
-            //        List<long> nuntiasOwnerIdList = NuntiasRepository.Instance.NuntiasOwnerIdList(newNuntias.Id);
-            //        foreach (long userId in nuntiasOwnerIdList)
-            //        {
-            //            Output.ShowLog(userId);
-            //            List<string> connectionIdList = LoggedInConnectionIdList(userId);
-            //            foreach (string connectionId in connectionIdList)
-            //            {
-            //                Output.ShowLog("cm: " + userId + " " + connectionId + " " + connectionIdList.Count);
-                            ServerHub.WorkingHubInstance.Clients.All.SendNuntias(newNuntias.ToJson());
-            //            }
-            //        }
+                    List<long> nuntiasOwnerIdList = NuntiasRepository.Instance.NuntiasOwnerIdList(newNuntias.Id);
+                    foreach (long userId in nuntiasOwnerIdList)
+                    {
+                        Output.ShowLog(userId);
+                        List<string> connectionIdList = LoggedInConnectionIdList(userId);
+                        foreach (string connectionId in connectionIdList)
+                        {
+                            if (MacConnectionIdMap[requestingMacAddress] == connectionId) continue;
+                            Output.ShowLog("cm: " + userId + " " + connectionId);
+                            ServerHub.WorkingHubInstance.Clients.Client(connectionId).SendNuntias(newNuntias.ToJson());
+                        }
+                    }
                 }
                 catch(Exception ex)
                 {
@@ -109,24 +112,65 @@ namespace ServerConnections
             bworker.RunWorkerCompleted += (s, e) => { bworker.Dispose(); };
         }
 
-        internal void CastTypingTextToConsumers(long conversationId, string text, string macAddress)
+        internal void CastTypingTextToConsumers(long conversationId, string text, long typingUserId)
         {
-            //List<long> conversationMemberIdList = ConsumerRepository.Instance.ConversationMemberIdList(conversationId);
-            //foreach (long userId in conversationMemberIdList)
-            //{
-            //    List<string> connectionIdList = LoggedInConnectionIdList(userId);
-            //    foreach (string connectionId in connectionIdList)
-            //    {
-            //        if (MacConnectionIdMap[macAddress] == connectionId) continue;
-            //        BackgroundWorker bworker = new BackgroundWorker();
-            //        bworker.DoWork += (s, e) =>
-            //        {
-                        ServerHub.WorkingHubInstance.Clients.All.SomethingBeingTypedForYou(conversationId, text);
-            //        };
-            //        bworker.RunWorkerAsync();
-            //        bworker.RunWorkerCompleted += (s, e) => { bworker.Dispose(); };
-            //    }
-            //}
+            Output.ShowLog("CastTypingTextToConsumers() => " + conversationId + " text: " + text);
+            BackgroundWorker bworker = new BackgroundWorker();
+            bworker.DoWork += (s, e) =>
+            {
+                
+                List<long> nuntiasOwnerIdList = ConsumerRepository.Instance.ConversationMemberIdList(conversationId);
+                foreach (long userId in nuntiasOwnerIdList)
+                {
+                    if (userId == typingUserId) continue;
+                    Output.ShowLog(userId);
+                    List<string> connectionIdList = LoggedInConnectionIdList(userId);
+                    foreach (string connectionId in connectionIdList)
+                    {
+                        try
+                        {
+                            Output.ShowLog("cm: " + userId + " " + connectionId);
+                            ServerHub.WorkingHubInstance.Clients.Client(connectionId).SomethingBeingTypedForYou(conversationId, text);
+                        }
+                        catch(Exception ex)
+                        {
+                            Output.ShowLog("Exception in CastTypingTextToConsumers() => for id:" + userId + " " + ex.Message);
+                        }
+                    }
+                }
+            };
+            bworker.RunWorkerAsync();
+            bworker.RunWorkerCompleted += (s, e) => { bworker.Dispose(); };
+        }
+
+        internal void UpdateUsersActivityToFriends(long userId, string activity)
+        {
+            Output.ShowLog("UpdateUsersActivityToFriends() => " + userId + " activity: " + activity);
+            BackgroundWorker bworker = new BackgroundWorker();
+            bworker.DoWork += (s, e) =>
+            {
+
+                List<Consumer> friendListIdList = ConsumerRepository.Instance.GetFriendListOf(userId, "");
+                foreach (Consumer friend in friendListIdList)
+                {
+                    long friendId = friend.Id;
+                    List<string> connectionIdList = LoggedInConnectionIdList(friendId);
+                    foreach (string connectionId in connectionIdList)
+                    {
+                        try
+                        {
+                            Output.ShowLog("cm: " + friendId + " " + connectionId);
+                            ServerHub.WorkingHubInstance.Clients.Client(connectionId).UpdateUsersActivity(userId, activity);
+                        }
+                        catch (Exception ex)
+                        {
+                            Output.ShowLog("Exception in UpdateUsersActivityToFriends() => for id:" + friendId + " " + ex.Message);
+                        }
+                    }
+                }
+            };
+            bworker.RunWorkerAsync();
+            bworker.RunWorkerCompleted += (s, e) => { bworker.Dispose(); };
         }
 
         public static ClientManager Instance { get { return new ClientManager(); } }
