@@ -31,7 +31,7 @@ namespace LocalRepository
         public bool? Update(Consumer consumer)
         {
             string sql = "DELETE from Consumers WHERE User_ID = " + consumer.Id;
-            this.ExecuteSqlCeQuery(sql);
+            if(this.ExecuteSqlCeQuery(sql) == null) return null;
             long? id = Insert(consumer);
             if (id == null) return null;
             if (id > 0) return true;

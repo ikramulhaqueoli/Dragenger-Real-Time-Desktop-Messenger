@@ -32,3 +32,41 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Dra
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Dragenger\bin\Debug\Interfaces.pdb
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Dragenger\obj\Debug\Dragenger.exe
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Dragenger\obj\Debug\Dragenger.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Dragenger.exe.config
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Dragenger.exe.manifest
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Dragenger.application
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Dragenger.exe
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Dragenger.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\CorePanels.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\ProcessManagement.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\ResourceLibrary.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\EntityLibrary.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\ServerConnections.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\StandardAssuranceLibrary.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\FileIOAccess.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\MathLaboratory.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\LocalRepository.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Interfaces.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\System.Data.SqlServerCe.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\CorePanels.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\ProcessManagement.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\ResourceLibrary.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\EntityLibrary.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\ServerConnections.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\StandardAssuranceLibrary.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\FileIOAccess.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\MathLaboratory.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\LocalRepository.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\bin\Debug\Interfaces.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\obj\Debug\Dragenger.csprojResolveAssemblyReference.cache
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\obj\Debug\Dragenger.Properties.Resources.resources
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\obj\Debug\Dragenger.csproj.GenerateResource.Cache
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\obj\Debug\Dragenger.exe.manifest
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\obj\Debug\Dragenger.application
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\obj\Debug\Dragenger.exe
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\Dragenger\obj\Debug\Dragenger.pdb

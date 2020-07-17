@@ -15,9 +15,16 @@ namespace LocalRepository
     public class DatabaseAccess : IDisposable
     {
         private SqlCeConnection connection;
-        public static string LocalDbPassword { set; private get; }
+        public static string LocalDbPassword
+        {
+            set;
+            private get;
+        }
         public DatabaseAccess()
         {
+            //testing
+            LocalDbPassword = "";
+            //
             this.connection = new SqlCeConnection(this.ConnectionString);
         }
 
@@ -28,9 +35,9 @@ namespace LocalRepository
                 try { this.connection.Close(); } catch { }
                 this.connection.Open();
             }
-            catch
+            catch (Exception ex)
             {
-                //Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.Message);
                 ResetUserData();
                 this.connection = new SqlCeConnection(this.ConnectionString);
                 this.connection.Open();
@@ -44,9 +51,6 @@ namespace LocalRepository
 
         private void ResetUserData()
         {
-            //testing
-            LocalDbPassword = "";
-            //
             LocalDataFileAccess.ResetUserData();
             string usersDbPassword = DatabaseAccess.LocalDbPassword;
             DatabaseAccess.LocalDbPassword = null;

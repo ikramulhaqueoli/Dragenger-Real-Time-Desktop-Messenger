@@ -20,11 +20,13 @@ namespace CorePanels
                 Universal.ParentForm.Invoke(new Action(() =>
                 {
                     ShowNuntiasTasks(nuntias, playConversationInnerSound, processesedText);
+                    ConversationListPanel.MyConversationListPanel.RefreshConversationList();
                 }));
             }
             else
             {
                 ShowNuntiasTasks(nuntias, playConversationInnerSound, processesedText);
+                ConversationListPanel.MyConversationListPanel.RefreshConversationList();
             }
         }
 

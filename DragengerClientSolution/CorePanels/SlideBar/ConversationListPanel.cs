@@ -31,8 +31,6 @@ namespace CorePanels
             this.parent = parent;
             this.BackColor = Color.FromArgb(176, 176, 176);
             this.singleConversationPanelList = new Dictionary<string, Panel>();
-			this.RefreshConversationList();
-            this.Size = this.PreferredSize;
         }
 
         internal void RefreshConversationList()
@@ -41,13 +39,22 @@ namespace CorePanels
             {
                 Console.WriteLine("RefreshConversationList()");
 				this.conversationHeaderJsonList = this.FetchConversationList();
+                Console.WriteLine(conversationHeaderJsonList.Count);
                 if (this.conversationHeaderJsonList == null || this.conversationHeaderJsonList.Count == 0)
                 {
                     this.ShowEmptyConversationWarning();
                     return;
                 }
-                if (Universal.ParentForm.InvokeRequired) Universal.ParentForm.Invoke(new Action(() => { this.ShowConversationsInPanel(); }));
-                else this.ShowConversationsInPanel();
+                if (Universal.ParentForm.InvokeRequired) Universal.ParentForm.Invoke(new Action(() =>
+                {
+                    this.ShowConversationsInPanel();
+                    this.Size = this.PreferredSize;
+                }));
+                else
+                {
+                    this.ShowConversationsInPanel();
+                    this.Size = this.PreferredSize;
+                }
             }
             catch(Exception ex)
             {
@@ -79,7 +86,7 @@ namespace CorePanels
 
         private void ShowConversationsInPanel()
         {
-			// here conversationDetailsPanel works only for duetConversations. fix it later.
+            // here conversationDetailsPanel works only for duetConversations. fix it later.
             if (this.conversationHeaderJsonList.Count > 0)
             {
                 try
@@ -112,7 +119,7 @@ namespace CorePanels
 
                     this.Controls.Add(currentConversationTitlePanel);
 
-                    currentConversationTitlePanel.Width = this.parent.Width - 10;
+                    currentConversationTitlePanel.Width = this.parent.Width;
                     Consumer consumer = ServerRequest.GetConsumer((long)chatJson["other_member_id"]); 
                     Panel conversationDetailsPanel = this.conversationDetailsPanelList[conversationId.ToString()] = new UserProfilePanel(consumer, this);
  
@@ -181,7 +188,6 @@ namespace CorePanels
                 else { currentConversationTitlePanel = this.singleConversationPanelList[conversationId.ToString()]; }
                 currentConversationTitlePanel.Name = "valid";
                 validConversationHeaderJsonList[conversationId.ToString()] = chatJson;
-                Console.WriteLine("top " +currentConversationTitlePanel.Top);
             }
 
             List<string> invalidKeyList = new List<string>();

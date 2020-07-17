@@ -126,8 +126,8 @@ namespace CorePanels
                 else LoadEssentialPanelsAfterLoginSuccess();
                 BackendManager.SendPendingNuntii();
                 BackendManager.SyncWithTheServer();
+                ConversationListPanel.MyConversationListPanel.RefreshConversationList();
             }
-            
         }
 
         private static string GenerateLocalDbPassword()

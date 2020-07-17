@@ -2,3 +2,7 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Res
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\ResourceLibrary\bin\Debug\ResourceLibrary.pdb
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\ResourceLibrary\obj\Debug\ResourceLibrary.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\ResourceLibrary\obj\Debug\ResourceLibrary.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\ResourceLibrary\bin\Debug\ResourceLibrary.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\ResourceLibrary\bin\Debug\ResourceLibrary.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\ResourceLibrary\obj\Debug\ResourceLibrary.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\ResourceLibrary\obj\Debug\ResourceLibrary.pdb

@@ -5,3 +5,10 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Fil
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\bin\Debug\ResourceLibrary.pdb
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\FileIOAccess\bin\Debug\FileIOAccess.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\FileIOAccess\bin\Debug\FileIOAccess.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\FileIOAccess\bin\Debug\ResourceLibrary.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\FileIOAccess\bin\Debug\ResourceLibrary.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.csprojResolveAssemblyReference.cache
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.pdb
