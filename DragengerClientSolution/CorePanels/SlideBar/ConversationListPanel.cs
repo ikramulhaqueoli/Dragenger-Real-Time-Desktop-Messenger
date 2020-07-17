@@ -79,7 +79,6 @@ namespace CorePanels
 
         private void ShowConversationsInPanel()
         {
-			// here conversation icon is dummy yet. replace Consumer.LoggedIn.ProfileImage with proper image
 			// here conversationDetailsPanel works only for duetConversations. fix it later.
             if (this.conversationHeaderJsonList.Count > 0)
             {
@@ -182,7 +181,7 @@ namespace CorePanels
                 else { currentConversationTitlePanel = this.singleConversationPanelList[conversationId.ToString()]; }
                 currentConversationTitlePanel.Name = "valid";
                 validConversationHeaderJsonList[conversationId.ToString()] = chatJson;
-                Console.WriteLine("top" +currentConversationTitlePanel.Top);
+                Console.WriteLine("top " +currentConversationTitlePanel.Top);
             }
 
             List<string> invalidKeyList = new List<string>();
