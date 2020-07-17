@@ -25,6 +25,7 @@ namespace CorePanels
         private List<Panel> listPanels;
         public SlidebarPanel(Form parent)
         {
+            
             this.parent = parent;
             this.Width = parent.ClientSize.Width * 3 / 5;
             this.Height = parent.ClientSize.Height;

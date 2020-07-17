@@ -27,7 +27,7 @@ namespace ServerConnections
 
         private void ReconnectToServer(Exception exception)
         {
-            Console.WriteLine("Connection Error in ServerHub => " + exception.Message);
+            Console.WriteLine("Connection Error in ServerHub => " + exception.Message + "\n" + exception.StackTrace);
             try { this.StopConnection(); } catch { }
             this.ConnectToServer();
             BackgroundWorker bworker = new BackgroundWorker();

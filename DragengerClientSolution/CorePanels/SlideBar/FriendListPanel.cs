@@ -43,6 +43,7 @@ namespace CorePanels
         {
             try
             {
+                Console.WriteLine("RefreshFriendlist()");
                 BackgroundWorker backgroundWorker = new BackgroundWorker();
                 backgroundWorker.DoWork += (s, e) =>
                 {
@@ -190,9 +191,10 @@ namespace CorePanels
                     {
                         this.singleFriendPanelList[friend.Id] = new Panel();
                         currentFriendPanel = this.singleFriendPanelList[friend.Id];
+                        this.friendCarryListPanel.Visible = false;
                         friendCarryListPanel.Controls.Add(currentFriendPanel);
 
-                        currentFriendPanel.Width = this.friendCarryListPanel.Width;
+                        currentFriendPanel.Width = this.parent.Width - 10;
 
                         Label friendIconLabel = singleFriendIconLabelList[friend.Id] = new Label();
                         friendIconLabel.Image = new Bitmap(friend.ProfileImage, new Size(50, 50));
@@ -279,6 +281,7 @@ namespace CorePanels
             }
 
             this.friendCarryListPanel.Size = this.friendCarryListPanel.PreferredSize;
+            this.friendCarryListPanel.Visible = true;
         }
 
         private bool OpenConversationWith(Consumer friend)

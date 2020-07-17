@@ -53,6 +53,7 @@ namespace CorePanels
             else this.receiver = ((DuetConversation)theConversation).Member1;
             this.PrimaryStageInitializer();
             this.LoadNewConversation();
+            this.SyncUserActivity(null);
         }
 
         public ConversationPanel(Form parent, Consumer receiver)
@@ -66,6 +67,7 @@ namespace CorePanels
             }
             this.PrimaryStageInitializer();
             this.LoadNewConversation();
+            this.SyncUserActivity(null);
         }
 
         private void PrimaryStageInitializer()
@@ -115,38 +117,47 @@ namespace CorePanels
             loaderWorker.RunWorkerAsync();
         }
 
-        public void RefreshCurrentConversationReceiver()
+        public void SyncUserActivity(string userActivity)
         {
-            if (this.theConversation.Type != "duet") return;
-            this.receiver.LastActive = ServerRequest.ReceiverLastActiveTime(this.receiver.Id);
-            Universal.ParentForm.Invoke(new MethodInvoker(delegate
+            BackgroundWorker loaderWorker = new BackgroundWorker();
+            loaderWorker.DoWork += (s, e) =>
             {
-                if (this.receiver.LastActive == null)
+                if (userActivity == null) userActivity = ServerRequest.ReceiverLastActiveTime(this.receiver.Id);
+                ConsumerRepository.Instance.UpdateUserActivity(this.receiver.Id, userActivity);
+                if (userActivity == null || this.theConversation.Type != "duet") return;
+                this.receiver.LastActive = ConsumerRepository.Instance.ReceiverLastActiveTime(receiver.Id);
+                Universal.ParentForm.Invoke(new MethodInvoker(delegate
                 {
-                    this.currentStatusLabel.Visible = false;
-                    this.currentStatusIcon.Visible = false;
-                    return;
-                }
-                if (Time.TimeDistanceInSecond(Time.CurrentTime, this.receiver.LastActive) > 5)
-                {
-                    long timeDistanceInMinute = Time.TimeDistanceInMinute(Time.CurrentTime, this.receiver.LastActive);
-                    if (timeDistanceInMinute < 60) this.currentStatusLabel.Text = "Active " + timeDistanceInMinute + " minutes ago";
-                    else if (timeDistanceInMinute < 1440) this.currentStatusLabel.Text = "Active about " + timeDistanceInMinute / 60 + " hours ago";
-                    else if (timeDistanceInMinute < 10080) this.currentStatusLabel.Text = "Active about " + timeDistanceInMinute / 1440 + " days ago";
-                    else if (timeDistanceInMinute < 40320) this.currentStatusLabel.Text = "Active about " + timeDistanceInMinute / 10080 + " weeks ago";
-                    else this.currentStatusLabel.Text = "Active about " + timeDistanceInMinute / 40320 + " months ago";
-                    this.currentStatusIcon.Visible = false;
-                }
-                else
-                {
-                    this.currentStatusLabel.Text = "Active Now";
-                    this.currentStatusIcon.Visible = true;
-                }
-                this.currentStatusLabel.Visible = true;
-                this.currentStatusLabel.Size = this.currentStatusLabel.PreferredSize;
-                this.currentStatusLabel.Left = this.conversationNameLabel.Right - currentStatusLabel.PreferredWidth;
-                this.currentStatusIcon.Left = this.currentStatusLabel.Left - 15;
-            }));
+                    if (this.receiver.LastActive == null)
+                    {
+                        this.currentStatusLabel.Visible = false;
+                        this.currentStatusIcon.Visible = false;
+                        return;
+                    }
+                    if (Time.TimeDistanceInSecond(Time.CurrentTime, this.receiver.LastActive) > 5)
+                    {
+                        long timeDistanceInMinute = Time.TimeDistanceInMinute(Time.CurrentTime, this.receiver.LastActive);
+                        if (timeDistanceInMinute < 60) this.currentStatusLabel.Text = "Active " + timeDistanceInMinute + " minutes ago";
+                        else if (timeDistanceInMinute < 1440) this.currentStatusLabel.Text = "Active about " + timeDistanceInMinute / 60 + " hours ago";
+                        else if (timeDistanceInMinute < 10080) this.currentStatusLabel.Text = "Active about " + timeDistanceInMinute / 1440 + " days ago";
+                        else if (timeDistanceInMinute < 40320) this.currentStatusLabel.Text = "Active about " + timeDistanceInMinute / 10080 + " weeks ago";
+                        else this.currentStatusLabel.Text = "Active about " + timeDistanceInMinute / 40320 + " months ago";
+                        this.currentStatusIcon.Visible = false;
+                    }
+                    else
+                    {
+                        this.currentStatusLabel.Text = "Active Now";
+                        this.currentStatusIcon.Visible = true;
+                    }
+                    this.currentStatusLabel.Visible = true;
+                    this.currentStatusLabel.Size = this.currentStatusLabel.PreferredSize;
+                    this.currentStatusLabel.Left = this.conversationNameLabel.Right - currentStatusLabel.PreferredWidth;
+                    this.currentStatusIcon.Left = this.currentStatusLabel.Left - 15;
+                }));
+            };
+            loaderWorker.RunWorkerCompleted += (s, e) => { VisualizingTools.HideWaitingAnimation(); loaderWorker.Dispose(); };
+            loaderWorker.RunWorkerAsync();
+            
         }
 
         private void ShowSmilyWelcome()
@@ -362,7 +373,6 @@ namespace CorePanels
             this.nuntiasTextBox.Height = this.nuntiasTextBox.PreferredHeight;
             this.nuntiasTextBox.Location = new Point(6, 6);
             this.nuntiasTextBox.Focus();
-            this.nuntiasTextBox.KeyPress += (s, e) => { Console.WriteLine("hey"); };
             this.nuntiasTextBox.Click += new EventHandler(OnClick);
             this.nuntiasTextBox.TextChanged += new EventHandler(OnTextChangeNuntiasTextBox);
         }
@@ -491,17 +501,23 @@ namespace CorePanels
             }
         }
 
+        private bool? typingStatusSent = false;
         private void OnTextChangeNuntiasTextBox(Object sender, EventArgs eargs)
         {
+            if (typingStatusSent == null) return;
             TextBox nuntiasBox = (TextBox)sender;
             string text = nuntiasBox.Text;
-            if (text.Length > maxCharactersPerLine) text = "..." + text.Substring(text.Length - maxCharactersPerLine);
-            string sendText = "typing:       " + text + "... |";
-            if (text.Length == 0) sendText = "";
+            string sendText = "typing...";
+            if (text.Length == 0) { sendText = ""; }
+
+            if (typingStatusSent == true && sendText.Length > 0) return;
+            if (typingStatusSent == false && sendText.Length == 0) return;
+            typingStatusSent = null;
             BackgroundWorker loaderWorker = new BackgroundWorker();
             loaderWorker.DoWork += (s, e) =>
             {
-                ServerRequest.SomethingTypingOnConversationFor(this.theConversation.ConversationID, sendText);
+                bool success = ServerRequest.SomethingTypingOnConversationFor(this.theConversation.ConversationID, Consumer.LoggedIn.Id, sendText);
+                typingStatusSent = (success && sendText.Length > 0);
             };
             loaderWorker.RunWorkerCompleted += (s, e) => { loaderWorker.Dispose(); };
             loaderWorker.RunWorkerAsync();

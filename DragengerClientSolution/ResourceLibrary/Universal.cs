@@ -27,7 +27,7 @@ namespace ResourceLibrary
                 select nic.GetPhysicalAddress().ToString()
             ).FirstOrDefault();
             systemMACAddress = macAddress.ToString();
-            systemMACAddress = "526341789852";       //for testing
+            //systemMACAddress = "526341789852";       //for testing
             //systemMACAddress = "926341789852";       //for testing
         }
         public static string SystemMACAddress

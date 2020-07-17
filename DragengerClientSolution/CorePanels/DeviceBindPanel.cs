@@ -230,6 +230,7 @@ namespace CorePanels
             if (errorMessage.Length > 0)
             {
                 VisualizingTools.HideWaitingAnimation();
+                this.errorLabel = new Label();
                 this.errorLabel.Text = errorMessage;
                 this.errorLabel.Font = CustomFonts.New(CustomFonts.SmallerSize, 'i');
                 this.errorLabel.ForeColor = Color.Red;

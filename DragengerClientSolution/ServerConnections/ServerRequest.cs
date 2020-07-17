@@ -158,7 +158,7 @@ namespace ServerConnections
             return userId;
         }
 
-        public static Time ReceiverLastActiveTime(long userId)
+        public static string ReceiverLastActiveTime(long userId)
         {
             string lastActiveStamp = null;
             ServerHub.WorkingInstance.ServerHubProxy.Invoke<string>("UserLastActiveTime", userId).ContinueWith(task =>
@@ -170,9 +170,7 @@ namespace ServerConnections
                 catch (Exception ex) { Console.WriteLine("Exception in ReceiverLastActiveTime() => " + ex.Message); }
             }).Wait();
             if (lastActiveStamp == null || lastActiveStamp.Length == 0) return null;
-            //Console.WriteLine(lastActiveStamp);
-            if (lastActiveStamp == "active") return Time.CurrentTime;
-            return new Time(lastActiveStamp);
+            return lastActiveStamp;
         }
 
         public static bool? BindDeviceAndLogin(string macAddress, string username, string password)
@@ -364,7 +362,7 @@ namespace ServerConnections
 
         public static bool SyncUncachedConversations(List<Nuntias> nuntiasList)
         {
-            //Console.WriteLine("SyncUncachedConversations()");
+            Console.WriteLine("SyncUncachedConversations()");
             HashSet<long> conversationIdSet = new HashSet<long>();
             foreach (Nuntias nuntias in nuntiasList)
             {
@@ -426,13 +424,15 @@ namespace ServerConnections
         public static bool SyncConsumer(long id)
         {
             JObject consumerJson = null;
+            Console.WriteLine(id);
             ServerHub.WorkingInstance.ServerHubProxy.Invoke<JObject>("GetConsumer", id).ContinueWith(task =>
             {
                 if (!task.IsFaulted)
                 {
                     consumerJson = task.Result;
                 }
-            }).Wait();
+            }).Wait(); Console.WriteLine(id);
+            if (consumerJson == null) return false;
             Consumer consumer = new Consumer(id, consumerJson["username"] + "", consumerJson["email"] + "", consumerJson["name"] + "");
             try { consumer.ProfileImageId = consumerJson["profile_img_id"].ToString(); }
             catch { }
@@ -515,6 +515,7 @@ namespace ServerConnections
 
         public static void UpdateNuntiasStatus(Nuntias newNuntias)
         {
+            return;
             JObject nuntiasJsonData = newNuntias.ToJson();
             nuntiasJsonData["user_id"] = Consumer.LoggedIn.Id;
             bool? success = null;
@@ -528,16 +529,17 @@ namespace ServerConnections
         }
 
         private static bool SomethingTypingOnConversationForBusy = false;
-        public static void SomethingTypingOnConversationFor(long conversationId, string text)
+        public static bool SomethingTypingOnConversationFor(long conversationId, long typingUserId, string text)
         {
-            if (SomethingTypingOnConversationForBusy) return;
+            if (SomethingTypingOnConversationForBusy) return false;
             SomethingTypingOnConversationForBusy = true;
-            Console.WriteLine("hello");
-            ServerHub.WorkingInstance.ServerHubProxy.Invoke<bool>("SomethingTypingOnConversationFor", conversationId, text).ContinueWith(task =>
+            bool success = false;
+            ServerHub.WorkingInstance.ServerHubProxy.Invoke<bool>("SomethingTypingOnConversationFor", conversationId, typingUserId, text).ContinueWith(task =>
             {
-                
+                success = task.Result;
             }).Wait();
             SomethingTypingOnConversationForBusy = false;
+            return success;
         }
 
         public static bool? UnbindDeviceFromAccount()

@@ -115,6 +115,7 @@ namespace CorePanels
 
         internal static void LoginNow(User user)                                            //works as expected
         {
+            Console.WriteLine("LoginNow()");
             DatabaseAccess.LocalDbPassword = BackendManager.GenerateLocalDbPassword();
             DatabaseAccess.Instance.VerifyUserDataValidity();
             if (Universal.ParentForm.InvokeRequired) Universal.ParentForm.Invoke(new MethodInvoker(delegate { SplashScreen.Instance.Show(); }));
@@ -125,9 +126,8 @@ namespace CorePanels
                 else LoadEssentialPanelsAfterLoginSuccess();
                 BackendManager.SendPendingNuntii();
                 BackendManager.SyncWithTheServer();
-                if (Universal.ParentForm.InvokeRequired) Universal.ParentForm.Invoke(new MethodInvoker(RefreshUsingLongPoolingMethod));
-                else RefreshUsingLongPoolingMethod();
             }
+            
         }
 
         private static string GenerateLocalDbPassword()
@@ -139,26 +139,6 @@ namespace CorePanels
         {
             BackendManager.Password = newPassword;
             DatabaseAccess.Instance.ChangeLocalDataBasePassword(BackendManager.GenerateLocalDbPassword());
-        }
-
-        public static void RefreshUsingLongPoolingMethod()
-        {
-            KeepRefreshingRunning = true;
-            BackgroundWorker bworker = new BackgroundWorker();
-            bworker.DoWork += (s, e) =>
-            {
-                while (BackendManager.KeepRefreshingRunning)
-                {
-                    try
-                    {
-                        Thread.Sleep(30000);
-                        ConversationPanel.CurrentDisplayedConversationPanel.RefreshCurrentConversationReceiver();
-                    }
-                    catch { }
-                }
-            };
-            bworker.RunWorkerAsync();
-            bworker.RunWorkerCompleted += (s, e) => { bworker.Dispose(); };
         }
 
         private static bool SendPendingNuntiiTaskGoing = false;
@@ -248,6 +228,7 @@ namespace CorePanels
 
         public static void LoadEssentialPanelsAfterLoginSuccess()
         {
+            Console.WriteLine("LoadEssentialPanelsAfterLoginSuccess()");
             SlidebarPanel.MySidebarPanel = new SlidebarPanel(Universal.ParentForm);
             Universal.ParentForm.Controls.Add(SlidebarPanel.MySidebarPanel);
             new ConversationPanel(Universal.ParentForm, Conversation.TopConversation);

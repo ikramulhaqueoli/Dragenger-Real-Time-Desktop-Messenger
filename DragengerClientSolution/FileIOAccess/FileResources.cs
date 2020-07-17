@@ -11,6 +11,7 @@ using System.IO;
 using System.Reflection;
 using System.Media;
 using System.Drawing.Text;
+using ResourceLibrary;
 
 namespace FileIOAccess
 {
@@ -220,8 +221,8 @@ namespace FileIOAccess
         {
             get
             {
-                string localDbFileName = "LocalData.sdf";
-                if (LocalDataFileAccess.CopyLocalDbToAppdataIfNotExists()) return UserDataPath + localDbFileName;
+                string localDbFileName = Universal.SystemMACAddress + ".sdf";
+                if (LocalDataFileAccess.CopyLocalDbToAppdataIfNotExists(localDbFileName)) return UserDataPath + localDbFileName;
                 else return null;
             }
         }

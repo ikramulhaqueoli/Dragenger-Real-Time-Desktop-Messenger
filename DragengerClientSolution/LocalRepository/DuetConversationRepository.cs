@@ -13,7 +13,6 @@ namespace LocalRepository
     {
         new public long? Insert(Conversation item)
         {
-            Console.WriteLine(item);
             long? insertedId = base.Insert(item);
             this.CloseConnection();
             if (insertedId == null) return null;

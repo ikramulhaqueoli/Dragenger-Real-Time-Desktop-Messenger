@@ -32,12 +32,10 @@ namespace ProcessManagement
         {
             ServerHub.WorkingInstance.ServerHubProxy.On<JObject>("SendNuntias", (nuntiasJson) =>
             {
-                //Console.WriteLine(nuntiasJson);
-
                 Nuntias newNuntias = new Nuntias(nuntiasJson);
                 if (newNuntias != null)
                 {
-                    Console.WriteLine("SendNuntias() Called by server. " + newNuntias.Id + " " + newNuntias.ContentFileId);
+                    Console.WriteLine("SendNuntias() Called by server => " + newNuntias.Id + " " + newNuntias.ContentFileId);
                     bool updatedNuntias = false;
                     if (newNuntias.SenderId != Consumer.LoggedIn.Id && newNuntias.DeliveryTime == null)
                     {
@@ -57,7 +55,6 @@ namespace ProcessManagement
                         else ServerFileRequest.DownloadAndStoreContentFile(newNuntias);
                     }
                     bool? updateResult = NuntiasRepository.Instance.Update(newNuntias);
-                    Console.WriteLine("update: " + updateResult);
                     if (updateResult == false)
                     {
                         long? result = NuntiasRepository.Instance.Insert(newNuntias);
@@ -78,6 +75,15 @@ namespace ProcessManagement
                     {
                         Console.WriteLine("SendPendingNuntias() Called by server. ");
                         BackendManager.SendPendingNuntii();
+                    }
+                );
+
+            ServerHub.WorkingInstance.ServerHubProxy.On<long,string>("UpdateUsersActivity", (userId, userActivity) =>
+                    {
+                        if(ConversationPanel.CurrentDisplayedConversationPanel != null && ConversationPanel.CurrentDisplayedConversationPanel.TheConversation.Type == "duet" && ((DuetConversation)ConversationPanel.CurrentDisplayedConversationPanel.TheConversation).OtherMember.Id == userId)
+                        {
+                            ConversationPanel.CurrentDisplayedConversationPanel.SyncUserActivity(userActivity);
+                        }
                     }
                 );
 
@@ -102,7 +108,7 @@ namespace ProcessManagement
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine("Exception: " + ex.Message);
+                            Console.WriteLine("Exception in SomethingBeingTypedForYou() => : " + ex.Message);
                         }
                     }
                 );

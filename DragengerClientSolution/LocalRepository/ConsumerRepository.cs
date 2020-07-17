@@ -107,6 +107,30 @@ namespace LocalRepository
             return ConsumerListFromQuery(query);
         }
 
+        public bool? UpdateUserActivity(long id, string userActivity)
+        {
+            string val = "NULL";
+            if (userActivity != null) val = "'"+userActivity+"'";
+            string query = "UPDATE Consumers SET Last_Active = " + val + " where User_ID = " + id + ";";
+            int? success = this.ExecuteSqlCeQuery(query);
+            if (success == null) return null;
+            return (success > 0);
+        }
+
+        public Time ReceiverLastActiveTime(long id)
+        {
+            string query = "SELECT Last_Active FROM Consumers where User_ID = " + id;
+            SqlCeDataReader data = this.ReadSqlCeData(query);
+            if (data != null && data.Read())
+            {
+                string activity = data["Last_Active"].ToString();
+                if (activity == "active") return Time.CurrentTime;
+                if (activity.Length > 0) return new Time(activity);
+                return null;
+            }
+            return null;
+        }
+
         public List<Consumer> SearchTop20NonfriendPersonsByKeyword(long userId, string keyword)
         {
             keyword = keyword.ToLower();

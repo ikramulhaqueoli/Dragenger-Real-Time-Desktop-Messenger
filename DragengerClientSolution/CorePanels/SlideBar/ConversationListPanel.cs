@@ -39,12 +39,13 @@ namespace CorePanels
         {
             try
             {
+                Console.WriteLine("RefreshConversationList()");
 				this.conversationHeaderJsonList = this.FetchConversationList();
-				if (this.conversationHeaderJsonList == null || this.conversationHeaderJsonList.Count == 0)
-				{
-					this.ShowEmptyConversationWarning();
-					return;
-				}
+                if (this.conversationHeaderJsonList == null || this.conversationHeaderJsonList.Count == 0)
+                {
+                    this.ShowEmptyConversationWarning();
+                    return;
+                }
                 if (Universal.ParentForm.InvokeRequired) Universal.ParentForm.Invoke(new Action(() => { this.ShowConversationsInPanel(); }));
                 else this.ShowConversationsInPanel();
             }
@@ -112,10 +113,11 @@ namespace CorePanels
 
                     this.Controls.Add(currentConversationTitlePanel);
 
-                    currentConversationTitlePanel.Width = this.parent.Width;
-                    Panel conversationDetailsPanel = this.conversationDetailsPanelList[conversationId.ToString()] = new UserProfilePanel(ServerRequest.GetConsumer((long)chatJson["other_member_id"]), this);
+                    currentConversationTitlePanel.Width = this.parent.Width - 10;
+                    Consumer consumer = ServerRequest.GetConsumer((long)chatJson["other_member_id"]); 
+                    Panel conversationDetailsPanel = this.conversationDetailsPanelList[conversationId.ToString()] = new UserProfilePanel(consumer, this);
  
-                     conversationDetailsPanel.Visible = false;
+                    conversationDetailsPanel.Visible = false;
 					this.Controls.Add(conversationDetailsPanel);
 
                     Label conversationIconLabel = singleConversationIconLabelList[conversationId.ToString()] = new Label();
@@ -180,6 +182,7 @@ namespace CorePanels
                 else { currentConversationTitlePanel = this.singleConversationPanelList[conversationId.ToString()]; }
                 currentConversationTitlePanel.Name = "valid";
                 validConversationHeaderJsonList[conversationId.ToString()] = chatJson;
+                Console.WriteLine("top" +currentConversationTitlePanel.Top);
             }
 
             List<string> invalidKeyList = new List<string>();

@@ -217,11 +217,10 @@ namespace FileIOAccess
             return File.Exists(path);
         }
 
-        internal static bool CopyLocalDbToAppdataIfNotExists()
+        internal static bool CopyLocalDbToAppdataIfNotExists(string localDbFileName)
         {
             try
             {
-                string localDbFileName = "LocalData.sdf";
                 if (!File.Exists(FileResources.UserDataPath + localDbFileName))
                 {
                     CopyFreshLocalDbFile(localDbFileName);
@@ -242,7 +241,7 @@ namespace FileIOAccess
                 Console.WriteLine("ResetUserData()");
                 string dataDirectoryPath = FileResources.UserDataPath.Substring(0, FileResources.UserDataPath.Length - 1);
                 if(Directory.Exists(dataDirectoryPath)) Directory.Delete(dataDirectoryPath, true);
-                string localDbFileName = "LocalData.sdf";
+                string localDbFileName = Universal.SystemMACAddress + ".sdf";
                 if (File.Exists(FileResources.UserDataPath + localDbFileName)) File.Delete(FileResources.UserDataPath + localDbFileName);
                 CopyFreshLocalDbFile(localDbFileName);
                 return true;

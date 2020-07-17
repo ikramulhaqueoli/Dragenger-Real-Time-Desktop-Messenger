@@ -44,6 +44,9 @@ namespace LocalRepository
 
         private void ResetUserData()
         {
+            //testing
+            LocalDbPassword = "";
+            //
             LocalDataFileAccess.ResetUserData();
             string usersDbPassword = DatabaseAccess.LocalDbPassword;
             DatabaseAccess.LocalDbPassword = null;
@@ -52,6 +55,9 @@ namespace LocalRepository
 
         public bool ChangeLocalDataBasePassword(string password)
         {
+            //testing
+            password = "";
+            //
             try
             {
                 SqlCeEngine engine = new SqlCeEngine(this.ConnectionString);
