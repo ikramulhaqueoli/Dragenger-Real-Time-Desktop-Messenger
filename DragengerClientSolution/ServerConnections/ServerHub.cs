@@ -21,6 +21,7 @@ namespace ServerConnections
         {
             ConnectToServer();
 
+            hubConnection.DeadlockErrorTimeout = TimeSpan.FromSeconds(120);
             hubConnection.Closed += new Action(ConnectToServer);
             hubConnection.Error += new Action<Exception>(ReconnectToServer);
         }

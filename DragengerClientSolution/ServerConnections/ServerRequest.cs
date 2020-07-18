@@ -421,19 +421,25 @@ namespace ServerConnections
             return ConsumerRepository.Instance.Get(id);
         }
 
-        public static bool SyncConsumer(long id)
+        public static bool SyncConsumer(long userId)
         {
+            Time lastSynced = ConsumerRepository.Instance.LastSyncedTime(userId);
+            if (lastSynced != null && Time.TimeDistanceInMinute(lastSynced, Time.CurrentTime) <= 360)
+            {
+                //consumer will never be synced if already synced within last 6 hours
+                return true;
+            }
             JObject consumerJson = null;
-            Console.WriteLine(id);
-            ServerHub.WorkingInstance.ServerHubProxy.Invoke<JObject>("GetConsumer", id).ContinueWith(task =>
+            Console.WriteLine("SyncConsumer() => " + userId);
+            ServerHub.WorkingInstance.ServerHubProxy.Invoke<JObject>("GetConsumer", userId).ContinueWith(task =>
             {
                 if (!task.IsFaulted)
                 {
                     consumerJson = task.Result;
                 }
-            }).Wait(); Console.WriteLine(id);
+            }).Wait();
             if (consumerJson == null) return false;
-            Consumer consumer = new Consumer(id, consumerJson["username"] + "", consumerJson["email"] + "", consumerJson["name"] + "");
+            Consumer consumer = new Consumer(userId, consumerJson["username"] + "", consumerJson["email"] + "", consumerJson["name"] + "");
             try { consumer.ProfileImageId = consumerJson["profile_img_id"].ToString(); }
             catch { }
             ServerFileRequest.RefetchProfileImage(consumer.ProfileImageId);

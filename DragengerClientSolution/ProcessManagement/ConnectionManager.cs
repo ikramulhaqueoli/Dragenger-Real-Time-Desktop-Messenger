@@ -59,7 +59,11 @@ namespace ProcessManagement
                     {
                         long? result = NuntiasRepository.Instance.Insert(newNuntias);
                         if (result == null) return;
-                        try { if (ConversationPanel.CurrentDisplayedConversationPanel.TheConversation.ConversationID == newNuntias.NativeConversationID) ConversationPanel.CurrentDisplayedConversationPanel.ShowNuntias(newNuntias, true); }
+                        try
+                        {
+                            if (ConversationListPanel.MyConversationListPanel != null) ConversationListPanel.MyConversationListPanel.RefreshConversationList();
+                            if (ConversationPanel.CurrentDisplayedConversationPanel.TheConversation.ConversationID == newNuntias.NativeConversationID) ConversationPanel.CurrentDisplayedConversationPanel.ShowNuntias(newNuntias, true);
+                        }
                         catch { }
                     }
                     else if (updateResult == true)

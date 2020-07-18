@@ -26,31 +26,3 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Cor
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\CorePanels\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\CorePanels.dll.config
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\CorePanels.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\CorePanels.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\EntityLibrary.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\FileIOAccess.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\LocalRepository.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\MathLaboratory.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Newtonsoft.Json.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\ResourceLibrary.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\ServerConnections.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\StandardAssuranceLibrary.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Interfaces.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\System.Data.SqlServerCe.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\EntityLibrary.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\FileIOAccess.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\LocalRepository.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\MathLaboratory.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\ResourceLibrary.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\ServerConnections.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\StandardAssuranceLibrary.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Newtonsoft.Json.xml
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Interfaces.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.csprojResolveAssemblyReference.cache
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.pdb

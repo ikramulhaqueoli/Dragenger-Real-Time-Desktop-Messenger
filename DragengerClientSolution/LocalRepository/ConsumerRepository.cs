@@ -22,7 +22,7 @@ namespace LocalRepository
             if (consumer.Birthdate != null) birthdate = "'" + consumer.Birthdate.DbFormat +"'";
             if (consumer.Phone != null && consumer.Phone.Length > 5) phone = "'" + consumer.Phone +"'";
             if (consumer.LastActive != null) last_active = "'" + consumer.LastActive.DbFormat +"'";
-            string sql = "INSERT INTO Consumers (User_ID,Username,Name,Email,Profile_img_ID,Birthdate,Phone,Gender,Last_Active) values ('" + consumer.Id + "','"+consumer.Username+"','" + consumer.Name + "','" + consumer.Email + "',"+profileImgId+","+birthdate+","+phone+","+gender+","+last_active+");";
+            string sql = "INSERT INTO Consumers (User_ID,Username,Name,Email,Profile_img_ID,Birthdate,Phone,Gender,Last_Active,Last_Synced) values ('" + consumer.Id + "','"+consumer.Username+"','" + consumer.Name + "','" + consumer.Email + "',"+profileImgId+","+birthdate+","+phone+","+gender+","+last_active+",'"+Time.CurrentTime.TimeStampString+"');";
             int? success = this.ExecuteSqlCeQuery(sql);
             if (success == null || success == 0) return null;
             return consumer.Id;
@@ -277,6 +277,19 @@ namespace LocalRepository
             if(reader.Read())
             {
                 return new Time((DateTime)reader.GetValue(0));
+            }
+            return null;
+        }
+
+        public Time LastSyncedTime(long userId)
+        {
+            string query = "select Last_Synced from Consumers WHERE User_ID = " + userId + ";";
+            SqlCeDataReader data = this.ReadSqlCeData(query);
+            if (data != null && data.Read())
+            {
+                string timeStamp = data["Last_Synced"].ToString();
+                if (timeStamp == null || timeStamp.Length == 0) return null;
+                return new Time(timeStamp);
             }
             return null;
         }

@@ -1,7 +1,7 @@
-D:\PROJECTS\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\EntityLibrary.dll
-D:\PROJECTS\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\EntityLibrary.pdb
-D:\PROJECTS\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\Newtonsoft.Json.dll
-D:\PROJECTS\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\Newtonsoft.Json.xml
-D:\PROJECTS\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.csprojResolveAssemblyReference.cache
-D:\PROJECTS\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.dll
-D:\PROJECTS\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\EntityLibrary.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\EntityLibrary.pdb
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.csprojResolveAssemblyReference.cache
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.dll
+D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.pdb

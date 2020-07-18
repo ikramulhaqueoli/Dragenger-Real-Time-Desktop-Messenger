@@ -15,7 +15,7 @@ using ServerConnections;
 
 namespace CorePanels
 {
-    class ConversationListPanel : Panel
+    public class ConversationListPanel : Panel
     {
         private Panel parent;
         private List<JObject> conversationHeaderJsonList;
@@ -33,7 +33,7 @@ namespace CorePanels
             this.singleConversationPanelList = new Dictionary<string, Panel>();
         }
 
-        internal void RefreshConversationList()
+        public void RefreshConversationList()
         {
             try
             {

@@ -55,6 +55,7 @@ namespace CorePanels
             };
             loaderWorker.RunWorkerAsync();
             loaderWorker.RunWorkerCompleted += (s, e) => { loaderWorker.Dispose(); };
+            if (ConversationListPanel.MyConversationListPanel != null) ConversationListPanel.MyConversationListPanel.RefreshConversationList();
         }
 
         private void SendChoosenFile(string choosenSafeFileName, string localPath, string extension)
@@ -130,6 +131,8 @@ namespace CorePanels
                 };
             };
             loaderWorker.RunWorkerAsync();
+            loaderWorker.RunWorkerCompleted += (s,e) => { loaderWorker.Dispose(); };
+            if (ConversationListPanel.MyConversationListPanel != null) ConversationListPanel.MyConversationListPanel.RefreshConversationList();
         }
 
         private void FilePreviewPanelHeight(int height)

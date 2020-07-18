@@ -5,10 +5,3 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Mat
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.csprojResolveAssemblyReference.cache
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\MathLaboratory\bin\Debug\MathLaboratory.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\MathLaboratory\bin\Debug\MathLaboratory.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\MathLaboratory\bin\Debug\ResourceLibrary.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\MathLaboratory\bin\Debug\ResourceLibrary.pdb
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.csprojResolveAssemblyReference.cache
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.dll
-D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.pdb
