@@ -259,12 +259,6 @@ namespace ServerConnections
             return false;
         }
 
-        public bool ChangePassword(long userId, string newPassword)         //not implemented yet
-        {
-            Output.ShowLog("ChangePassword() => " + userId);
-            return false;
-        }
-
         public string UserLastActiveTime(long userId)
         {
             return UserRepository.Instance.UserLastActiveTime(userId);

@@ -23,7 +23,7 @@ namespace LocalRepository
         public DatabaseAccess()
         {
             //testing
-            LocalDbPassword = "";
+            //LocalDbPassword = "";
             //
             this.connection = new SqlCeConnection(this.ConnectionString);
         }
@@ -60,7 +60,7 @@ namespace LocalRepository
         public bool ChangeLocalDataBasePassword(string password)
         {
             //testing
-            password = "";
+            //password = "";
             //
             try
             {

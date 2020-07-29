@@ -5,10 +5,12 @@ using ResourceLibrary;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -79,16 +81,13 @@ namespace ServerConnections
                 if (!LocalDataFileAccess.ProfileImgExistsInLocalData(profileImageId))
                 {
                     if (profileImageId == null || profileImageId.Length == 0) return false;
-                    byte[] fetchedImageByteArray = null;
-                    ServerHub.WorkingInstance.ServerHubProxy.Invoke<byte[]>("GetProfileImageByProfileImgId", profileImageId).ContinueWith(task =>
+                    string fileLink = "http://" + ConfigurationManager.AppSettings["serverIp"] + ":" + ConfigurationManager.AppSettings["xamppPort"] + "/ProfileImages/" + profileImageId;
+                    Console.WriteLine("ServerFileRequest.cs line 85: " + fileLink);
+                    string targetLocalPath = FileResources.ProfileImgFolderPath + profileImageId;
+                    using (WebClient webClient = new WebClient())
                     {
-                        if (!task.IsFaulted)
-                        {
-                            fetchedImageByteArray = task.Result;
-                        }
-                    }).Wait();
-                    Image profileImg = Universal.ByteArrayToImage(fetchedImageByteArray);
-                    return LocalDataFileAccess.SaveProfileImageToLocal(profileImg, profileImageId);
+                        webClient.DownloadFile(fileLink, targetLocalPath);
+                    }
                 }
                 return true;
             }
@@ -102,19 +101,19 @@ namespace ServerConnections
         public static void DownloadAndStoreContentFile(Nuntias nuntias)
         {
             if (nuntias.ContentFileId == null || nuntias.ContentFileId == "deleted" || nuntias.ContentFileId.Length == 0 || LocalDataFileAccess.ContentExistsInLocalData(nuntias.ContentFileId)) return;
-            byte[] fileBytes = null;
-            ServerHub.WorkingInstance.ServerHubProxy.Invoke<byte[]>("GetNuntiasContentFile", nuntias.Id).ContinueWith(task =>
+            try
             {
-                if (!task.IsFaulted)
+                string fileLink = "http://" + ConfigurationManager.AppSettings["serverIp"] + ":" + ConfigurationManager.AppSettings["xamppPort"] + "/ContentFiles/" + nuntias.Id;
+                Console.WriteLine("ServerFileRequest.cs line 107: " + fileLink);
+                string targetLocalPath = FileResources.NuntiasContentFolderPath + nuntias.ContentFileId;
+                using (WebClient webClient = new WebClient())
                 {
-                    fileBytes = task.Result;
+                    webClient.DownloadFile(fileLink, targetLocalPath);
                 }
-            }).Wait();
-            if (fileBytes == null) Console.WriteLine("File downloading failed!");
-            else
+            }
+            catch(Exception ex)
             {
-                Console.WriteLine("File downloading success!");
-                LocalDataFileAccess.SaveNuntiasContentToLocal(new MemoryStream(fileBytes, false), nuntias.ContentFileId);
+                Console.WriteLine("Exception in ServerFileRequest:DownloadAndStoreContentFile() => " + ex.Message);
             }
         }
 

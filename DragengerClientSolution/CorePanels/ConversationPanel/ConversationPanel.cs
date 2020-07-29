@@ -53,7 +53,7 @@ namespace CorePanels
             else this.receiver = ((DuetConversation)theConversation).Member1;
             this.PrimaryStageInitializer();
             this.LoadNewConversation();
-            this.SyncUserActivity(null);
+            this.UpdateUserActivity(null);
         }
 
         public ConversationPanel(Form parent, Consumer receiver)
@@ -67,7 +67,7 @@ namespace CorePanels
             }
             this.PrimaryStageInitializer();
             this.LoadNewConversation();
-            this.SyncUserActivity(null);
+            this.UpdateUserActivity(null);
         }
 
         private void PrimaryStageInitializer()
@@ -117,7 +117,7 @@ namespace CorePanels
             loaderWorker.RunWorkerAsync();
         }
 
-        public void SyncUserActivity(string userActivity)
+        public void UpdateUserActivity(string userActivity)
         {
             BackgroundWorker loaderWorker = new BackgroundWorker();
             loaderWorker.DoWork += (s, e) =>

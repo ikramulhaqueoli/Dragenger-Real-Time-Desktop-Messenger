@@ -70,7 +70,7 @@ namespace ProcessManagement
                     {
                         SyncAssets.UpdateNuntias(newNuntias);
                     }
-                    if (updatedNuntias) ServerConnections.ServerRequest.UpdateNuntiasStatus(newNuntias);
+                    if (updatedNuntias) ServerRequest.UpdateNuntiasStatus(newNuntias);
                 }
             }
                 );
@@ -84,10 +84,14 @@ namespace ProcessManagement
 
             ServerHub.WorkingInstance.ServerHubProxy.On<long,string>("UpdateUsersActivity", (userId, userActivity) =>
                     {
-                        if(ConversationPanel.CurrentDisplayedConversationPanel != null && ConversationPanel.CurrentDisplayedConversationPanel.TheConversation.Type == "duet" && ((DuetConversation)ConversationPanel.CurrentDisplayedConversationPanel.TheConversation).OtherMember.Id == userId)
+                        try
                         {
-                            ConversationPanel.CurrentDisplayedConversationPanel.SyncUserActivity(userActivity);
+                            if (ConversationPanel.CurrentDisplayedConversationPanel.TheConversation.Type == "duet" && ((DuetConversation)ConversationPanel.CurrentDisplayedConversationPanel.TheConversation).OtherMember.Id == userId)
+                            {
+                                ConversationPanel.CurrentDisplayedConversationPanel.UpdateUserActivity(userActivity);
+                            }
                         }
+                        catch { }
                     }
                 );
 
