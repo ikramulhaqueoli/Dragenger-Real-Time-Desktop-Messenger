@@ -7,3 +7,14 @@ D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSol
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\Interfaces\obj\Debug\Interfaces.dll
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\Interfaces\obj\Debug\Interfaces.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Interfaces\bin\Debug\Interfaces.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Interfaces\bin\Debug\Interfaces.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Interfaces\bin\Debug\EntityLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Interfaces\bin\Debug\Newtonsoft.Json.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Interfaces\bin\Debug\EntityLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Interfaces\bin\Debug\Newtonsoft.Json.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Interfaces\obj\Debug\Interfaces.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Interfaces\obj\Debug\Interfaces.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Interfaces\obj\Debug\Interfaces.pdb

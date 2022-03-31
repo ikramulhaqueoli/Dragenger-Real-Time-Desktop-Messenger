@@ -15,14 +15,14 @@
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
           UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the 
+          If you want to change the Windows User Account Control level replace the
           requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward 
+         If you want to utilize File and Registry Virtualization for backward
          compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
@@ -49,19 +49,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HxmWO2I4AuZvU5kee0O4hdcB8XlSilG4o/2TItDgasI=</dsig:DigestValue>
+        <dsig:DigestValue>oRON00Bd2oKqDf8LQPlEWROPVscHUtv/J0zDvgIR9+Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DragengerServer.exe" size="18912">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DragengerServer.exe" size="17920">
       <assemblyIdentity name="DragengerServer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>A5GL808ahvHJOG/Uiyh0kJa9LN2G7WBiCCwDCebqIe4=</dsig:DigestValue>
+        <dsig:DigestValue>XwqaZ7CtpSzobW4aGeY6vmuLSPP4mZTwsT1U6+xVIR4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>40cCPiy8Wdg+RMBWfr8zPIOwIVHWDnzCs2KPLccC28E=</dsig:DigestValue>
+        <dsig:DigestValue>HHhjWaK+uIUgutl7DmPTsB6Qvh9RTlVO6SOiTOkTYcw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eQpQI2Pun87xgEz3+711D3iVMJ4Yu9yAEm9V0WzOL9o=</dsig:DigestValue>
+        <dsig:DigestValue>JpSCIEl98sUxZFndyL9BVi1MuUJNGPeZVCAPpk0ba/Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -97,7 +97,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LgIzrYmcwqed5lliQJhtlmPydjZ9AxJ2IwDiV3kRiH8=</dsig:DigestValue>
+        <dsig:DigestValue>sq4JTkKPYROIBAXrIqKVK5ZR0qMyX9EVA7KhkMAO9AM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -205,7 +205,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>17V3INHUXX2907YWeTPmx55MpGAT86Uxz6tHmuYdfiw=</dsig:DigestValue>
+        <dsig:DigestValue>2MROAChIme/cBTg/nmWElfldS+G+NdcAb3aez7aD7/o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -217,7 +217,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jolBia65xRZcoy9Qsm2QvusbyYlQp+Hk6yLeVKg27yY=</dsig:DigestValue>
+        <dsig:DigestValue>wzTScx4gGnPEFFhXBosKSnT4CYJQ7qvj2Jv38yuEnog=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -229,7 +229,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2mjiUJUBrCTK+yZviUWXP7izhw50l0Gdegk/sonXASE=</dsig:DigestValue>
+        <dsig:DigestValue>2ipL/QJwv3pZzkCqTIvVLIU7IaV1lqtThh2BjFOhNiI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -245,13 +245,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="DragengerServer.exe.config" size="1355">
+  <file name="DragengerServer.exe.config" size="1345">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>sr3AQo5VrDGU2w4Uq+/YTv8Ii6AqZ5QBOkuvi9YCEUc=</dsig:DigestValue>
+      <dsig:DigestValue>qEr6nLuXlgJeGAIC9j5DPk8XxfwKN7he2iit0nPsdck=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

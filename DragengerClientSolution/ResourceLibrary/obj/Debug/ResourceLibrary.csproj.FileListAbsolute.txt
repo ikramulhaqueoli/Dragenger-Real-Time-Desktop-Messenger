@@ -2,3 +2,9 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Res
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\ResourceLibrary\bin\Debug\ResourceLibrary.pdb
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\ResourceLibrary\obj\Debug\ResourceLibrary.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\ResourceLibrary\obj\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ResourceLibrary\bin\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ResourceLibrary\bin\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ResourceLibrary\obj\Debug\ResourceLibrary.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ResourceLibrary\obj\Debug\ResourceLibrary.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ResourceLibrary\obj\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ResourceLibrary\obj\Debug\ResourceLibrary.pdb

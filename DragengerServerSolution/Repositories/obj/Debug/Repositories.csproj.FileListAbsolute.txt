@@ -13,3 +13,20 @@ D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSol
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\Repositories\obj\Debug\Repositories.csprojResolveAssemblyReference.cache
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\Repositories\obj\Debug\Repositories.dll
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\Repositories\obj\Debug\Repositories.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\Repositories.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\Repositories.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\Display.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\EntityLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\Interfaces.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\Newtonsoft.Json.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\Display.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\EntityLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\Interfaces.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\bin\Debug\Newtonsoft.Json.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\obj\Debug\Repositories.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\obj\Debug\Repositories.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\obj\Debug\Repositories.csproj.CopyComplete
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\obj\Debug\Repositories.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\Repositories\obj\Debug\Repositories.pdb

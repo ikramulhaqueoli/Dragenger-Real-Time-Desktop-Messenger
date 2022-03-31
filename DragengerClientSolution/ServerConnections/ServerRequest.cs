@@ -521,7 +521,6 @@ namespace ServerConnections
 
         public static void UpdateNuntiasStatus(Nuntias newNuntias)
         {
-            return;
             JObject nuntiasJsonData = newNuntias.ToJson();
             nuntiasJsonData["user_id"] = Consumer.LoggedIn.Id;
             bool? success = null;

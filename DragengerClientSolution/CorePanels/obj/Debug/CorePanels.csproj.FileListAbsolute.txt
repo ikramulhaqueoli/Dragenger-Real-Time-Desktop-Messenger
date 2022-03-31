@@ -26,3 +26,35 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Cor
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\CorePanels\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\CorePanels.dll.config
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\CorePanels.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\CorePanels.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\EntityLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\FileIOAccess.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\LocalRepository.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\MathLaboratory.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Newtonsoft.Json.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\ServerConnections.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\StandardAssuranceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Interfaces.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\System.Data.SqlServerCe.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\EntityLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\FileIOAccess.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\LocalRepository.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\MathLaboratory.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\ServerConnections.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\ServerConnections.dll.config
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\StandardAssuranceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\StandardAssuranceLibrary.dll.config
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Newtonsoft.Json.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Interfaces.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.csproj.CopyComplete
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\CorePanels\obj\Debug\CorePanels.pdb

@@ -5,3 +5,12 @@ D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSol
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.csprojResolveAssemblyReference.cache
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.dll
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\EntityLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\EntityLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\Newtonsoft.Json.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\EntityLibrary\bin\Debug\Newtonsoft.Json.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.csproj.CopyComplete
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\EntityLibrary\obj\Debug\EntityLibrary.pdb

@@ -14,3 +14,20 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Loc
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\bin\Debug\ResourceLibrary.pdb
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\obj\Debug\LocalRepository.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\LocalRepository\obj\Debug\LocalRepository.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\LocalRepository.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\LocalRepository.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\EntityLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\FileIOAccess.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\Interfaces.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\Newtonsoft.Json.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\EntityLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\FileIOAccess.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\Interfaces.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\bin\Debug\Newtonsoft.Json.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\obj\Debug\LocalRepository.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\obj\Debug\LocalRepository.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\obj\Debug\LocalRepository.csproj.CopyComplete
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\obj\Debug\LocalRepository.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\LocalRepository\obj\Debug\LocalRepository.pdb

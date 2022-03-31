@@ -5,3 +5,12 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Mat
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.csprojResolveAssemblyReference.cache
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\MathLaboratory\bin\Debug\MathLaboratory.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\MathLaboratory\bin\Debug\MathLaboratory.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\MathLaboratory\bin\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\MathLaboratory\bin\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.csproj.CopyComplete
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\MathLaboratory\obj\Debug\MathLaboratory.pdb

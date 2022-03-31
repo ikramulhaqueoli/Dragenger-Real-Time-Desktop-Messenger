@@ -24,3 +24,32 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Sta
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\Interfaces.pdb
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\StandardAssuranceLibrary\obj\Debug\StandardAssuranceLibrary.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\StandardAssuranceLibrary\obj\Debug\StandardAssuranceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\StandardAssuranceLibrary.dll.config
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\StandardAssuranceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\StandardAssuranceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\EntityLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\FileIOAccess.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\MathLaboratory.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\Newtonsoft.Json.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\ServerConnections.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\LocalRepository.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\Interfaces.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\System.Data.SqlServerCe.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\EntityLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\FileIOAccess.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\MathLaboratory.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\ServerConnections.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\ServerConnections.dll.config
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\Newtonsoft.Json.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\LocalRepository.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\bin\Debug\Interfaces.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\obj\Debug\StandardAssuranceLibrary.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\obj\Debug\StandardAssuranceLibrary.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\obj\Debug\StandardAssuranceLibrary.csproj.CopyComplete
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\obj\Debug\StandardAssuranceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\StandardAssuranceLibrary\obj\Debug\StandardAssuranceLibrary.pdb

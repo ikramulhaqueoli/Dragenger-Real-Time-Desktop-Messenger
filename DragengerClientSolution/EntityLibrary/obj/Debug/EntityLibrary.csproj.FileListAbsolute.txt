@@ -9,3 +9,16 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Ent
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\EntityLibrary\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\EntityLibrary\obj\Debug\EntityLibrary.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\EntityLibrary\obj\Debug\EntityLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\bin\Debug\EntityLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\bin\Debug\EntityLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\bin\Debug\FileIOAccess.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\bin\Debug\Newtonsoft.Json.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\bin\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\bin\Debug\FileIOAccess.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\bin\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\bin\Debug\Newtonsoft.Json.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\obj\Debug\EntityLibrary.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\obj\Debug\EntityLibrary.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\obj\Debug\EntityLibrary.csproj.CopyComplete
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\obj\Debug\EntityLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\EntityLibrary\obj\Debug\EntityLibrary.pdb

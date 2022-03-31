@@ -9,3 +9,16 @@ D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSol
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\ResourceLibrary\obj\Debug\ResourceLibrary.csprojResolveAssemblyReference.cache
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\ResourceLibrary\obj\Debug\ResourceLibrary.dll
 D:\Projects\Dragenger Project\Dragenger-A-Real-Time-Messenger\DragengerServerSolution\ResourceLibrary\obj\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\bin\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\bin\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\bin\Debug\Display.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\bin\Debug\EntityLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\bin\Debug\Newtonsoft.Json.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\bin\Debug\Display.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\bin\Debug\EntityLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\bin\Debug\Newtonsoft.Json.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\obj\Debug\ResourceLibrary.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\obj\Debug\ResourceLibrary.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\obj\Debug\ResourceLibrary.csproj.CopyComplete
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\obj\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerServerSolution\ResourceLibrary\obj\Debug\ResourceLibrary.pdb

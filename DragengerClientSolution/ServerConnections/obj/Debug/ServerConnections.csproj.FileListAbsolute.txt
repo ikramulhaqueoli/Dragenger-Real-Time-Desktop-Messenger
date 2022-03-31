@@ -22,3 +22,28 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Ser
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\ServerConnections\bin\Debug\Interfaces.pdb
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\ServerConnections\obj\Debug\ServerConnections.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\ServerConnections\obj\Debug\ServerConnections.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\ServerConnections.dll.config
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\ServerConnections.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\ServerConnections.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\EntityLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\FileIOAccess.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\LocalRepository.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\MathLaboratory.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\Newtonsoft.Json.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\Interfaces.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\EntityLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\FileIOAccess.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\LocalRepository.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\MathLaboratory.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\Newtonsoft.Json.xml
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\bin\Debug\Interfaces.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\obj\Debug\ServerConnections.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\obj\Debug\ServerConnections.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\obj\Debug\ServerConnections.csproj.CopyComplete
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\obj\Debug\ServerConnections.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\ServerConnections\obj\Debug\ServerConnections.pdb

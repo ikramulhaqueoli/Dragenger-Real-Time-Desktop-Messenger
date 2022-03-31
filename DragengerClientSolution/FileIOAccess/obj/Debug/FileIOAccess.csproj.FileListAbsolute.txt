@@ -5,3 +5,12 @@ C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\Fil
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\bin\Debug\ResourceLibrary.pdb
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.dll
 C:\Users\ikram\Documents\Visual Studio 2015\Projects\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\FileIOAccess\bin\Debug\FileIOAccess.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\FileIOAccess\bin\Debug\FileIOAccess.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\FileIOAccess\bin\Debug\ResourceLibrary.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\FileIOAccess\bin\Debug\ResourceLibrary.pdb
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.csproj.AssemblyReference.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.csproj.CoreCompileInputs.cache
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.csproj.CopyComplete
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.dll
+F:\Repositories\Dragenger-Real-Time-Desktop-Messenger\DragengerClientSolution\FileIOAccess\obj\Debug\FileIOAccess.pdb
